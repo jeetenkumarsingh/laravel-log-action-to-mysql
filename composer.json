@@ -15,6 +15,12 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jeetenkumarsingh/laravel-log-action-to-mysql"
+        }
+    ],
     "require": {
         "php": "^7.3",
         "spatie/laravel-package-tools": "^1.9.2"
