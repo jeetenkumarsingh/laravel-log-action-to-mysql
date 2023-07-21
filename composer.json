@@ -1,0 +1,54 @@
+{
+    "name": "jeetenkumarsingh/laravel-log-action-to-mysql",
+    "description": "A database driver for logging with Laravel",
+    "keywords": [
+        "jeetenkumarsingh",
+        "laravel",
+        "laravel-log-action-to-mysql"
+    ],
+    "homepage": "https://github.com/jeetenkumarsingh/laravel-log-action-to-mysql",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Kumar Singh",
+            "email": "jeetenkumarsingh@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "spatie/laravel-package-tools": "^1.9.2"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jeter\\LaravelLogDb\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jeter\\LaravelLogDb\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jeter\\LaravelLogDb\\DatabaseLoggerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
